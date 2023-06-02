@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我</title>
+    <link rel="stylesheet" href="./CSS/contact.css">
+</head>
+<body>
+    <!-- 页眉区guide -->
+    <div id="guide">
+        <!-- 右侧的下拉菜单 -->
+        <div class="dropdown">
+            <span class="know_more">KNOW MORE</span>
+            <div class="xiala">
+                <!-- 通往personality页面的超链接 -->
+                <a class="per" href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/personality.html">
+                    <p>My Personality</p>
+                </a>
+                <!-- 通往experience页面的超链接 -->
+                <a class="ex" href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/experience.html">
+                    <p>My Experience</p> 
+                </a>
+                <!-- 通往hobbies页面的超链接 -->
+                <a class="ho" href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/hobbies.html">
+                    <p>My Hobbies</p>
+                </a>
+            </div>
+        </div>
+        <!-- 左侧的返回主页键 -->
+        <div class="home">
+            <a class="home" href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/index.html">
+                <span class="return">HOME</span>
+            </a>
+        </div>
+    </div>
+    <!-- 侧边导航栏sidebar -->
+    <div class="sidebar">
+        <ul>
+            <!-- 此链接跳转到第一个内容区域 -->
+            <li><a href="#middle">Contact me</a></li>
+            <!-- 此链接跳转到第二个内容区域 -->
+            <li><a href="#leave_message">Leave a message</a></li>
+        </ul>
+    </div>
+    <!-- 标语图片区header -->
+    <div id="header">
+        <div class="header_title">
+            <span class="title1">“希望有人觉得认识我是一件幸运的事情”</span>
+        </div>
+    </div>
+
+    <!-- 第一块内容区middle，主要内容为一个表格 -->
+    <div id="middle">
+        <!-- 装有所有联系方式和社交媒体账号的表格 -->
+        <div id="table">
+            <div class="table_caption">
+                <span class="caption">Contact Me</span>
+            </div>
+            <table class="table" cellspacing="0" cellpadding="0">
+                <tbody class="tbody">
+                    <tr class="tr">
+                        <td class="td">Telephone:</td>
+                        <td class="td">17688741431</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">QQ:</td>
+                        <td class="td">1054263492</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">WeChat:</td>
+                        <td class="td">dahuoji03</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">Email:</td>
+                        <td class="td">1054263492@qq.com</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">Weibo:</td>
+                        <td class="td">没脾气的打火叽_</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">bilibili:</td>
+                        <td class="td">没脾气的打火叽_</td>
+                    </tr>
+                    <tr class="tr">
+                        <td class="td">Red Book:</td>
+                        <td class="td">309899988</td>
+                    </tr>
+                </tbody>    
+            </table>
+        </div>
+    </div>
+
+    <!-- 中间的鸡汤区 -->
+    <div id="saying">
+        <span class="sentence">--Twinkle in the milky way</span>
+    </div>
+
+    <!-- 第二块内容区leave_message，主要内容为一个表单 -->
+    <div id="leave_message">
+        <!-- 图片区 -->
+        <div class="photo">
+            <img class="photo_1" src="./images/alone2.png">
+        </div>
+        <!-- 标题 -->
+        <div class="leave_title">
+            <span class="title11">Leave a message</span>
+        </div>
+        <!-- 表单 -->
+        <form class="form">
+            <!-- 输入框 -->
+            <span class="name_title">Leave your name:</span>
+            <input type="text" id="name" placeholder="写下你的名字或昵称吧">
+            <br/>
+            <!-- 下拉选择框 -->
+            <span class="name_title">Our relationship:</span>
+            <select id="type">
+                <option selected>--你是我的谁--</option>
+                <option>同学</option>
+                <option>老师</option>
+                <option>宝贝</option>
+                <option>素未谋面的陌生人</option>
+            </select>
+            <br/>
+            <!-- 输入框 -->
+            <span class="name_title">Leave your number:</span>
+            <input type="text" id="number" placeholder="（如果愿意的话）留下你的联系方式吧">
+            <br/>
+            <br/>
+            <br/>
+            <!-- 文字域 留言板块 -->
+            <span class="message_title">Leave a message:</span>
+            <br/>
+            <textarea id="message" name="message" rows="10" cols="30" placeholder="写下任何你想对我说的话吧！"></textarea>
+        </form>
+    </div>
+
+    <!-- 页脚区bottom -->
+    <div id="bottom">
+        <span class="copyright">Copyright©DING HONGJING All Rights Reserved.</span>
+    </div>
+</body>
+</html>

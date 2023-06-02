@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的爱好</title>
+    <link rel="stylesheet" href="./CSS/hobbies.css">
+</head>
+<body>
+    <!-- 页眉区guide -->
+    <div id="guide">
+        <!-- 右侧的下拉菜单dropdown -->
+        <div class="dropdown">
+            <span class="know_more">KNOW MORE</span>
+            <div class="xiala">
+                <!-- 通往personality页面的超链接 -->
+                <a class="per" href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/personality.html">
+                    <p>My Personality</p>
+                </a>
+                <!-- 通往experience页面的超链接 -->
+                <a class="ex" href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/experience.html">
+                    <p>My Experience</p> 
+                </a>
+            </div>
+        </div>
+        <!-- 侧边导航栏sidebar -->
+        <div class="sidebar">
+            <ul>
+                <!-- 此链接跳转到摄影展区域 -->
+                <li><a href="#header">摄影</a></li>
+                <!-- 此链接跳转到平面设计展区域 -->
+                <li><a href="#middle_1">平面设计</a></li>
+            </ul>
+        </div>
+        <!-- 左侧的返回主页键 -->
+        <div class="home">
+            <a class="home" href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/index.html">
+                <span class="return">HOME</span>
+            </a>
+        </div>
+    </div>
+    <!-- 标题区 -->
+    <div id="header">
+        <!-- 左侧的背景音乐播放器 -->
+        <div class="header_bgm">
+            <span class="bgm">BGM:</span>
+            <audio class="music1" src="./music/薛之谦 - 变废为宝.flac" controls autoplay loop></audio>
+        </div>
+        <!-- 标题 -->
+        <div class="header_title">
+            <span class="title1">我的摄影展</span>
+        </div>
+    </div>
+    <!-- 摄影展区块 -->
+    <div id="middle">
+        <!-- 第一行的三个图片为一个盒子 -->
+        <div class="display_1">
+            <div class="image_1">
+                <img class="image1" src="./images/life.jpeg">
+            </div>
+            <div class="image_3">
+                <img class="image3" src="./images/The sunset.jpeg">
+            </div>
+            <!-- 最中间的图片要排列在最下方，因为上面两个图片都是float元素 -->
+            <div class="image_2">
+                <img class="image2" src="./images/The boat.jpeg">
+            </div>
+        </div>
+        <!-- 第二行图片 -->
+        <div class="display_2">
+            <div class="image_4">
+                <img class="image4" src="./images/jingzhou.jpeg">
+            </div>
+            <div class="image_6">
+                <img class="image6" src="./images/The bridge.jpeg">
+            </div>
+            <div class="image_5">
+                <img class="image5" src="./images/On the bridge.jpeg">
+            </div>
+        </div>
+        <!-- 第三行图片 -->
+        <div class="display_3">
+            <div class="image_7">
+                <img class="image7" src="./images/img1.jpeg">
+            </div>
+            <div class="image_9">
+                <img class="image9" src="./images/img2.jpeg">
+            </div>
+            <div class="image_8">
+                <img class="image8" src="./images/img5.jpeg">
+            </div>
+        </div>
+        <!-- 第四行图片 -->
+        <div class="display_4">
+            <div class="image_10">
+                <img class="image10" src="./images/img3.jpeg">
+            </div>
+            <div class="image_12">
+                <img class="image12" src="./images/img6.jpeg">
+            </div>
+            <div class="image_11">
+                <img class="image11" src="./images/img4.jpeg">
+            </div>
+        </div>
+    </div>
+    <!-- 平面设计展 标题区 -->
+    <div id="middle_1">
+        <div class="middle_1_title">
+            <span class="title1">我的平面设计展</span>
+        </div>
+    </div>
+    <!-- 摆放平面设计图片的区域 -->
+    <div id="middle_2">
+        <!-- 第一行图片为一个盒子 -->
+        <div class="display_1">
+            <div class="image_13">
+                <img class="image13" src="./images/daughter.png">
+            </div>
+            <div class="image_15">
+                <img class="image15" src="./images/bowen.jpg">
+            </div>
+            <div class="image_14">
+                <img class="image14" src="./images/shouka.png">
+            </div>
+        </div>
+        <!-- 第二行图片 -->
+        <div class="display_3">
+            <div class="image_16">
+                <img class="image16" src="./images/signing.png">
+            </div>
+            <div class="image_17">
+                <img class="image17" src="./images/healthy.jpg">
+            </div>
+        </div>
+    </div>
+    <!-- 页脚区bottom -->
+    <div id="bottom">
+        <span class="copyright">Copyright©DING HONGJING All Rights Reserved.</span>
+    </div>
+</body>
+</html>

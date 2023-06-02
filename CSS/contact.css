@@ -1,0 +1,366 @@
+body{
+    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+}
+
+#guide {
+    width: 100%;
+    height: 70px;
+    position:relative;
+    opacity: 1;
+}
+
+.home {
+    text-decoration: none;
+    padding-top: 10px;
+    width: 80px;
+    margin-left: 450px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.home:hover {
+    transform: translateY(-5px);
+}
+
+.dropdown {
+    float: right;
+    width: 300px;
+    height: 70px;
+    margin-right: 10px;
+    padding-top: 10px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+.dropdown:hover {
+    transform: translateY(-5px);
+}
+
+.know_more {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-right: 50px;
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.xiala{
+    display: none;
+}
+.dropdown:hover .xiala{
+    display: block;
+}
+.dropdown > span{
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+}
+.xiala{
+    width: 275px;
+    height: 285px;
+    background-color:#0D0E1C;
+    position: absolute;
+    left: 0px;
+    right: 30px;
+    border-radius: 15px;
+}
+.per > p{
+    cursor: pointer;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+.ex > p{
+    cursor: pointer;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+.ho > p{
+    cursor: pointer;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+
+.per{
+    text-decoration: none;
+}
+.ex{
+    text-decoration: none;
+}
+.ho{
+    text-decoration: none;
+}
+.xiala > p:hover{
+    background-color: black;
+}
+
+.return {
+    font-size: 36px;
+    color: white;
+    font-weight: bolder;
+    padding-left: 50px;
+    text-decoration: none;
+    padding-top: 5px;
+}
+
+#header {
+    height: 340px;
+    width: 95%;
+    margin: auto;
+    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/boat.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:scroll;
+    border-radius: 10px;
+    /* text-align: center; */
+}
+
+.header_title {
+    height: 100px;
+    width: 100%;
+    /* text-align: center; */
+    padding-top: 275px;
+}
+
+.title1 {
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: FangSong_GB2312, STFangsong, serif;
+    padding-left: 115px;
+    /* margin: auto; */
+}
+
+#middle {
+    height: 560px;
+    margin: auto;
+    margin-top: 30px;
+    width: 85%;
+    text-align: center;
+    background-color:#0D0E1C;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+#table {
+    height: 400px;
+    width: 100%;
+    padding-top: 100px;
+}
+
+.table {
+    width: 580px;
+    margin: auto;
+    align-content: center;
+    border: 1px solid;
+    border-color: white;
+}
+
+.table_caption {
+    padding-bottom: 20px;
+}
+
+.caption {
+    font-size: 48px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-decoration: underline;
+}
+
+.tbody {
+    border: 1px solid;
+}
+
+.tr {
+    color: white;
+    border: 1px solid;
+}
+
+.td {
+    color: white;
+    border: 1px solid;
+    font-size: 24px;
+}
+
+#saying {
+    height: 30px;
+    margin-top: 20px;
+    opacity: 0.7;
+}
+
+.sentence {
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 900px;
+    line-height: 30px;
+}
+
+#leave_message {
+    height: 700px;
+    margin: auto;
+    margin-top: 25px;
+    width: 85%;
+    background-color:#0D0E1C;
+    opacity: 0.7;
+    border-radius: 10px;
+}
+
+.leave_title {
+    padding-top: 30px;
+    padding-left: 80px;
+}
+
+.title11 {
+    color: white;
+    font-size: 40px;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form {
+    padding-top: 35px;
+    padding-left: 80px;
+    width: 640px;
+}
+
+.name_title {
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+}
+
+#name {
+    width: 280px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 28px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+}
+
+#type {
+    width: 290px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 28px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    margin-top: 50px;
+}
+
+#number {
+    width: 280px;
+    height: 40px;
+    margin-left: 20px;
+    border-radius: 28px;
+    text-align: center;
+    font-size: 16px;
+    border: none;
+    margin-top: 50px;
+}
+
+.message_title {
+    color: white;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-left: 50px;
+}
+
+#message {
+    width: 550px;
+    height: 200px;
+    font-size: 18px;
+    border-radius: 20px;
+    border: none;
+    margin-left: 50px;
+    margin-top: 20px;
+    text-indent: 2em;
+}
+
+.photo {
+    float: right;
+    width: 320px;
+    height: 600px;
+    padding-top: 100px;
+    padding-right: 100px;
+    border-radius: 15px;
+    opacity: 1.0; 
+}
+
+.photo_1 {
+    width: 340px;
+    border-radius: 15px;
+    opacity: 1.0;
+}
+
+/* 侧边导航栏 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -160px;
+    width: 160px;
+    height: 40%;
+    background-color: rgba(241, 241, 241, 0.75);
+    padding: 20px;
+    margin-top: 100px;
+    transition: left 0.5s ease-in-out;
+    border-radius: 10px;
+    z-index: 999;
+  }
+  
+  /* 侧边导航栏的隐藏和出现的动态效果 */
+  .sidebar:hover {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 999;
+  }
+  
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
+
+#bottom {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.copyright {
+    color: white;
+    font-size: 18px;
+    padding-left: 40px;
+}

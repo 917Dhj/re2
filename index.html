@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/index.css">
+    <title>丁泓景的主页</title>
+</head>
+<style>
+    canvas{
+        border: 3px solid white;
+        border-radius:50%;
+    }
+</style>
+<!-- 控制时钟的JavaScript代码段 -->
+<script>
+    (function(){
+        //cavas元素对象
+        var canvas=null;
+        //canvas的3d上下文
+        var ctx=null;
+        //cavan的尺寸
+        var cw=0;
+        var ch=0;
+        /**
+         * 页面导入时的事件处理
+         */
+        window.addEventListener("load",function(){
+            canvas=document.getElementById("sample");
+            ctx=canvas.getContext("2d");
+            cw=parseInt(canvas.width);
+            ch=parseInt(canvas.height);
+             
+            ctx.translate(cw/2, ch/2);
+         
+            //绘制时钟
+            draw_watch();
+        },false);  
+
+     
+        /**
+         * 绘制时钟
+         */
+        function draw_watch(){
+            //清空Canvas
+            ctx.clearRect(-cw/2,-ch/2,cw,ch);
+            //计算针的最大长度
+            var len=Math.min(cw, ch)/2;
+            //绘制刻度盘
+            var tlen=len*0.85;
+            ctx.font="14px 'Arial'";
+            ctx.fillStyle="white";
+            ctx.textAlign="center";
+            ctx.textBaseLine="middle";
+         
+            for(var i=1; i<=12; i++){
+                var tag1=Math.PI*2*(3-i)/12;
+                var tx=tlen * Math.cos(tag1);
+                var ty=-tlen * Math.sin(tag1);
+                ctx.fillText(i,tx,ty);
+            }
+            //获取当前的时分秒
+            var d=new Date();
+            var h=d.getHours();
+            var m=d.getMinutes();
+            var s=d.getSeconds();
+            if(h >12 ){
+                h=h-12;
+            }
+         
+            //绘制时针
+            var angle1 = Math.PI * 2 *(3 - (h+ m/60))/12;
+            var length1=len * 0.5;
+            var width1=5;
+            var color1="#F8F8FF";
+            drawhand(angle1,length1,width1,color1);
+         
+            //绘制分针
+            var angle2 = Math.PI * 2 *(15 - (m+ s/60))/60;
+            var length2=len * 0.7;
+            var width2=3;
+            var color2="#66CDAA";
+            drawhand(angle2,length2,width2,color2);
+         
+            //绘制秒针
+            var angle3 = Math.PI * 2 *(15 - s)/60;
+            var length3=len * 0.8;
+            var width3=1;
+            var color3="#FFD700";
+            drawhand(angle3,length3,width3,color3);
+         
+            //设置timer
+            setTimeout(draw_watch,1000);
+        }
+        /**
+         * 针绘制函数
+         */
+     
+        function drawhand(angle,len,width,color){
+            //计算针端的坐标
+            var x=len*Math.cos(angle);
+            var y=-len * Math.sin(angle);
+            //绘制针
+            ctx.strokeStyle=color;
+            ctx.lineWidth=width;
+            ctx.lineCap="round";
+            ctx.beginPath();
+            ctx.moveTo(0,0);
+            ctx.lineTo(x,y);
+            ctx.stroke();
+         
+        }
+    })();
+</script>
+<body>
+    <!-- 主页 -->
+    <div id="header">
+        <!-- 一个可以显示实时时间的时钟 -->
+        <div id="clock">
+            <canvas id="sample" width="120" height="120"></canvas>
+            <!-- 右上角的contact me按钮 -->
+            <div id="contact">
+                <button type="button" class="contact" onclick="window.location.href = '/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/contact.html'">contact me</button>
+            </div>
+        </div>
+        <div class="header_title">
+            <span class="welcome">
+                Welcome to my Website
+            </span>
+        </div>
+        <div class="header_subtitle">
+            <span class="poet">Click here to know about me</span>
+        </div>
+        <!-- 三个图片超链接对应三个页面 -->
+        <div class="button1">
+            <!-- 第一个超链接通往experience页面 -->
+            <div class="a2">
+                <a href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/experience.html">
+                    <img class="experience" src="./images/image3.jpeg">
+                </a>
+                <span class="line_a2">Experience</span>
+            </div>
+            <!-- 第二个超链接通往hobbies页面 -->
+            <div class="a3">
+                <a href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/hobbies.html">
+                    <img class="hobbies" src="./images/image4.jpeg">
+                </a>
+                <span class="line_a3">Hobbies</span>
+            </div>
+            <!-- 第三个超链接通往personality页面 -->
+            <div class="a1">
+                <a href="file:///Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/personality.html">
+                    <img class="personality" src="images/image2.jpeg">
+                </a>
+                <span class="line_a1">Personality</span>
+            </div>
+        </div>
+    </div>
+    <!-- 页脚bottom -->
+    <div id="bottom">
+        <span class="copyright">Copyright©DING HONGJING All Rights Reserved.</span>
+    </div>
+</body>
+</html>

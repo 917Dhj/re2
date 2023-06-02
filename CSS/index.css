@@ -1,0 +1,153 @@
+body {
+    background-color: antiquewhite;
+}
+/* 时钟 */
+#clock {
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+/* contact me按钮 */
+#contact {
+    float: right;
+    width: 200px;
+    height: 90px;
+    padding-right: 180px;
+    padding-top: 30px;
+}
+
+.contact {
+    width: 250px; 
+    height: 40px; 
+    color: brown; 
+    background-color:antiquewhite; 
+    opacity: 1.0; 
+    border: none;
+    font-size: 32px;
+    margin: auto;
+    font-family:'Times New Roman', Times, serif;
+    border-radius: 20px;
+}
+
+#contact button {
+    transition: all 0.3s;
+} 
+
+#contact button:hover {
+    transform: scale(1.1);
+}
+
+#header {
+    height: 800px;
+    width: 100%;
+    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/image.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:inherit;
+}
+
+#bottom {
+    height: 30px;
+    background-color: burlywood;
+}
+
+.copyright {
+    color: white;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.header_title{
+    padding-top: 60px;
+    height: 40px;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 96px;
+    font-family:serif;
+    color:brown;
+    font-weight: bolder;
+}
+
+.header_subtitle {
+    padding-top: 200px;
+    height: 30px;
+    text-align: center;
+}
+
+.poet {
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:brown;
+}
+
+.personality {
+    width: 150px;
+    border: 10px;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.experience {
+    width: 150px;
+    border: 10px;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.hobbies {
+    width: 150px;
+    border: 10px;
+    border-color: white;
+    border-radius: 15px;
+}
+
+.button1 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.button1 img{
+    transition: all 0.5s;
+}
+
+.button1 img:hover {
+    transform: scale(1.2);
+}
+
+.a1 {
+    width: 200px;
+    margin: auto;
+}
+
+.a2 {
+    width: 200px;
+    float: left;
+    padding-left: 380px;
+}
+
+.a3 {
+    width: 200px;
+    float: right;
+    padding-right: 380px;
+}
+
+.line_a1 {
+    color: brown;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.line_a2 {
+    color: brown;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.line_a3 {
+    color: brown;
+    font-size: 24px;
+    font-weight: bold;
+}

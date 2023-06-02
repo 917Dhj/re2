@@ -1,0 +1,323 @@
+body{
+    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/stars.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:fixed;
+}
+
+#guide {
+    width: 100%;
+    height: 70px;
+    position:relative;
+    opacity: 1;
+}
+
+.home {
+    text-decoration: none;
+    padding-top: 1px;
+    width: 80px;
+    margin-left: 450px;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* home键的动态效果 */
+.home:hover {
+    transform: translateY(-5px);
+}
+
+.dropdown {
+    float: right;
+    width: 300px;
+    height: 70px;
+    margin-right: 10px;
+    padding-top: 10px;
+    position: relative;
+    transition: transform 0.2s ease-in-out;
+}
+
+/* 下拉菜单KNOW MORE的动态效果 */
+.dropdown:hover {
+    transform: translateY(-5px);
+}
+
+.know_more {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-right: 50px;
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
+}
+
+.xiala{
+    display: none;
+}
+.dropdown:hover .xiala{
+    display: block;
+}
+.dropdown > span{
+    cursor: pointer;
+    height: 40px;
+    width: 200px;
+}
+.xiala{
+    width: 275px;
+    height: 200px;
+    background-color:#0D0E1C;
+    position: absolute;
+    left: 0px;
+    right: 30px;
+    border-radius: 15px;
+}
+.per > p{
+    cursor: pointer;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+.ho > p{
+    cursor: pointer;
+    color: white;
+    font-size: 36px;
+    font-weight: bolder;
+    padding-left: 10px;
+}
+.per{
+    text-decoration: none;
+}
+.ho{
+    text-decoration: none;
+}
+.xiala > p:hover{
+    background-color: black;
+}
+
+.return {
+    font-size: 36px;
+    color: white;
+    font-weight: bolder;
+    padding-left: 50px;
+    text-decoration: none;
+    padding-top: 5px;
+    display: inline-block;
+    transform: translateY(5px);
+    transition: transform 0.2s ease-in-out;
+}
+
+#header {
+    margin: auto;
+    height: 650px;
+    width: 95%;
+    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/life.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment:scroll;
+    border-radius: 10px;
+}
+
+.slogan {
+    text-align: center;
+    height: 100px;
+    width: 100%;
+    padding-top: 300px;
+}
+
+.slogan_title {
+    font-size: 36px;
+    font-weight: bolder;
+    color: white;
+    font-family: FangSong_GB2312, STFangsong, serif;
+}
+
+#middle {
+    height: 625px;
+    margin-top: 30px;
+}
+
+.photo_1 {
+    float: left;
+    width: 300px;
+    height: 600px;
+    padding-top: 55px;
+    padding-left: 150px;
+    border-radius: 15px;
+    opacity: 1.0; 
+}
+
+.intro {
+    width: 280px;
+    border-radius: 15px;
+    opacity: 1.0;
+}
+
+.description_1 {
+    width: 800px;
+    height: 500px;
+    margin-right: 100px;
+    padding-top: 20px;
+    margin-top: 30px;
+    background-color: #0D0E1C;
+    opacity: 0.7;
+    float: right;
+    border-radius: 10px;
+}
+
+.description_1_title_1 {
+    padding-left: 30px;
+}
+
+.title1 {
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    padding-right: 200px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.description_1_content_1 {
+    padding-top: 20px;
+    padding-left: 80px; 
+}
+
+.content1 {
+    color: white;
+    font-size: 18px;
+}
+
+.description_1_title_2 {
+    padding-top: 35px;
+    padding-left: 30px;
+}
+
+.title2 {
+    color: white;
+    font-weight: bolder;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline;
+}
+
+.description_1_content_2{
+    padding-left: 80px;
+    padding-top: 20px;
+}
+
+.content2{
+    color: white;
+    font-size: 18px;
+}
+
+#middle_2 {
+    height: 625px;
+    width: 100%;
+    margin-top: 30px;
+    /* background-color: #0D0E1C; */
+}
+
+.description_2 {
+    width: 800px;
+    height: 550px;
+    /* padding-right: 150px; */
+    margin-left: 100px;
+    padding-top: 20px;
+    margin-top: 30px;
+    background-color: #0D0E1C;
+    opacity: 0.7;
+    float: left;
+    border-radius: 10px;
+}
+
+.description_2_title_1 {
+    padding-left: 30px;
+}
+
+.description_2_content_1 {
+    padding-top: 20px;
+    padding-left: 80px; 
+}
+
+.description_2_title_2 {
+    padding-left: 30px;
+    padding-top: 35px;
+}
+
+.description_2_content_2 {
+    padding-top: 20px;
+    padding-left: 80px; 
+}
+
+.photo_2 {
+    float: right;
+    width: 320px;
+    height: 600px;
+    padding-top: 60px;
+    padding-right: 120px;
+    border-radius: 15px;
+    opacity: 1.0; 
+}
+
+.photo2 {
+    width: 340px;
+    border-radius: 15px;
+    opacity: 1.0;
+}
+
+#bottom {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.copyright {
+    color: white;
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+/* 侧边导航栏 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -160px;
+    width: 160px;
+    height: 40%;
+    background-color: rgba(241, 241, 241, 0.75);
+    padding: 20px;
+    margin-top: 100px;
+    transition: left 0.5s ease-in-out;
+    border-radius: 10px;
+    z-index: 999;
+  }
+  
+  /* 侧边导航栏的隐藏和出现的动态效果 */
+  .sidebar:hover {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar a {
+    display: block;
+    text-decoration: none;
+    color:black;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 999;
+  }
+  
+  .content {
+    margin-left: 220px;
+    padding: 20px;
+  }
