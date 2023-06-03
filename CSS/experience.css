@@ -111,7 +111,7 @@ body{
     margin: auto;
     height: 650px;
     width: 95%;
-    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/life.png);
+    background-image: url("https://917dhj.github.io/re2/images/life.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment:scroll;
@@ -215,13 +215,11 @@ body{
     height: 625px;
     width: 100%;
     margin-top: 30px;
-    /* background-color: #0D0E1C; */
 }
 
 .description_2 {
     width: 800px;
     height: 550px;
-    /* padding-right: 150px; */
     margin-left: 100px;
     padding-top: 20px;
     margin-top: 30px;
