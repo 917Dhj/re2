@@ -1,6 +1,6 @@
 body {
     background-color: antiquewhite;
-    background-image: url(/images/stars.jpg);
+    background-image: url("https://917dhj.github.io/re2/images/stars.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment:fixed;
@@ -46,7 +46,6 @@ body {
     font-size: 36px;
     font-weight: bolder;
     padding-right: 50px;
-    /* display: inline-block; */
     transform: translateY(5px);
     transition: transform 0.2s ease-in-out;
 }
@@ -108,7 +107,7 @@ body {
     height: 725px;
     width: 100%;
     margin: auto;
-    background-image: url(/images/image5.jpg);
+    background-image: url("https://917dhj.github.io/re2/images/image5.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment:scroll;
@@ -119,7 +118,7 @@ body {
 #middle {
     height: 625px;
     width: 100%;
-    background-image: url(/images/paper2.jpeg); 
+    background-image: url("https://917dhj.github.io/re2/images/paper2.jpeg"); 
     background-repeat: no-repeat;
     background-size: 100% 130%;
     background-attachment:scroll;
@@ -193,7 +192,7 @@ body {
     height: 625px;
     width: 100%;
     background-color:cadetblue;
-    background-image: url(/images/paper2.jpeg);
+    background-image: url("https://917dhj.github.io/re2/images/paper2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 130%;
     background-attachment:scroll; 
@@ -234,8 +233,6 @@ body {
 
 .little_man {
     width: 640px;
-    /* padding-top: 50px;
-    padding-left: 50px;  */
     border-radius: 15px;
     opacity: 1.0;
 }
@@ -254,7 +251,7 @@ body {
     height: 625px;
     width: 100%;
     background-color:cadetblue;
-    background-image: url(/images/paper2.jpeg);
+    background-image: url("https://917dhj.github.io/re2/images/paper2.jpeg");
     background-repeat: no-repeat;
     background-size: 100% 130%;
     background-attachment:scroll;
