@@ -1,5 +1,5 @@
 body{
-    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/stars.jpg);
+    background-image: url("https://917dhj.github.io/re2/images/stars.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment:fixed;
@@ -117,7 +117,7 @@ body{
     height: 340px;
     width: 95%;
     margin: auto;
-    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/boat.png);
+    background-image: url("https://917dhj.github.io/re2/images/boat.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment:scroll;
