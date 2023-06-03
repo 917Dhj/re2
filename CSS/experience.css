@@ -12,16 +12,20 @@ body{
     opacity: 1;
 }
 
-.home {
-    text-decoration: none;
-    padding-top: 1px;
-    width: 80px;
-    margin-left: 450px;
+.return_home {
+    margin-left: 880px;
+    float: left;
+    width: 150px;
     transition: transform 0.2s ease-in-out;
+    padding-top: 0px;
 }
 
-/* home键的动态效果 */
-.home:hover {
+.home {
+    text-decoration: none;
+    width: 100px;
+}
+
+.return_home:hover {
     transform: translateY(-5px);
 }
 
