@@ -1,5 +1,5 @@
 body{
-    background-image: url(/Users/dinghongjing/Desktop/大二下/Web前端/大作业.nosync/images/stars.jpg);
+    background-image: url("https://917dhj.github.io/re2/images/stars.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-attachment:fixed;
@@ -12,16 +12,20 @@ body{
     opacity: 1;
 }
 
-.home {
-    text-decoration: none;
-    padding-top: 5px;
+.return_home {
+    margin-left: 880px;
+    float: left;
+    width: 150px;
     transition: transform 0.2s ease-in-out;
-    width: 80px;
-    margin-left: 450px;
+    padding-top: 5px;
 }
 
-/* home键的动态效果 */
-.home:hover {
+.home {
+    text-decoration: none;
+    width: 100px;
+}
+
+.return_home:hover {
     transform: translateY(-5px);
 }
 
